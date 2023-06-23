@@ -58,8 +58,6 @@ body{
     justify-content: space-between;
     padding: 1rem 2rem;
 	margin: auto;
-	
-	
 }
 .header-menu{
     display: flex;
@@ -86,12 +84,13 @@ li:hover{
 }
 .rain-container{
 	width: 100%;
-	/* max-width: 100%; */
+	max-width: 80vw;
 	max-height: 100%;
 	
 }
 .rain-container i{
-	position: absolute;
+	max-width: 100%;
+	position: fixed;
 	top: -10px;
 	animation: rain linear infinite;
 	color: rgba(35, 134, 10, 0.315);
@@ -146,13 +145,47 @@ li:hover{
 button{
 	border: none;
 }
+
+
 @media only screen and (max-width: 600px) {
+	body{
+		width: 100vw;
+	}
+	.header{
+		margin: auto;
+		padding: 1rem 0;
+		max-height: 5vh;
+	}
 	.header-menu{
 		display: none;
+		flex-direction: column;
+		/* position: relative; */
 	}
 	.btn-menu{
 		display: inline-block;
 		background-color: rgba(0, 128, 0, 0.116) ;
+	}
+	.on{
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		width: 80vw;
+		background-color: rgba(9, 255, 0, 0.123);
+		height: 90%;
+		z-index: 4;
+		animation: menu 1s ease-out;
+	}
+	@keyframes menu {
+		0%{
+			transform: translateX(-100rem);
+		}
+		100%{
+			transform: translateX(0rem);
+		}
+	}
+	.off{
+		position: absolute;
+		left: -100vw;
 	}
 	.img-logoFelcc{
 		width: 7rem;
@@ -163,4 +196,5 @@ button{
 		height: 7rem;
 		z-index: 3;
 	}
+
   }
