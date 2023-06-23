@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*+++++++++++++++Fin de reset CSS++++++++++++++*/
+*{
+	color: white;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+    background-color: black;
+}
+.header{
+	/* position: absolute; */
+	width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+	margin: auto;
+	
+	
+}
+.header-menu{
+    display: flex;
+    gap: 0.2rem;
+	z-index: 3;
+    
+}
+.header-logo-img{
+	width: 3rem;
+	height: 3rem;
+}
+li{
+    background-color: green;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+li:hover{
+    background-color: rgba(5, 134, 26, 0.76);
+    text-decoration: underline;
+}
+.btn-menu{
+	display: none;
+}
+.rain-container{
+	width: 100%;
+	/* max-width: 100%; */
+	max-height: 100%;
+	
+}
+.rain-container i{
+	position: absolute;
+	top: -10px;
+	animation: rain linear infinite;
+	color: rgba(35, 134, 10, 0.315);
+}
+@keyframes rain {
+	0%{
+		top: -10px;
+	}
+	100%{
+		top: 95vh;
+	}
+}
+.features{
+	/* width: 100%; */
+	margin: 1rem 2rem;
+	/* height: 30vh; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.features-imgs{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.features-txt{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.features-title{
+	font-weight: bold;
+	font-size: 2rem;
+	color: yellow;
+	text-align: center;
+}
+.features-imgs{	
+	padding: 1rem;
+	margin: auto;
+}
+.img-logoFelcc{
+	width: 10rem;
+	z-index: 3;
+}
+.img-logoPolicia{
+	width: 10rem;
+	height: 10rem;
+	z-index: 3;
+}
+button{
+	border: none;
+}
+@media only screen and (max-width: 600px) {
+	.header-menu{
+		display: none;
+	}
+	.btn-menu{
+		display: inline-block;
+		background-color: rgba(0, 128, 0, 0.116) ;
+	}
+	.img-logoFelcc{
+		width: 7rem;
+		z-index: 3;
+	}
+	.img-logoPolicia{
+		width: 6rem;
+		height: 7rem;
+		z-index: 3;
+	}
+  }

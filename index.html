@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <section class="header">
+        <span><img class="header-logo-img" src="./img/logo_policia-0000-2w_1Z0o5f-transformed (1).png" alt="Logo"></span>
+        <ul class="header-menu">
+            <li>NOSOTROS</li>
+            <li>BOLETIN SEMANAL</li>
+            <li>PLATICAS PREVENTIVAS</li>
+            <li>SUS DERECHOS</li>
+            <li>DENUNCIAS</li>
+        </ul>
+        <button class="btn-menu"><span class="material-symbols-outlined">
+            menu
+            </span></button>
+    </section>
+    <section class="rain-container">
+    </section>
+    <section class="features">
+        <div class="features-txt">
+            <h1 class="features-title 1">POLICIA BOLIVIANA</h1>
+            <h2 class="features-title 2">FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h2>
+            <h2 class="features-title 3">DIVISIÓN DE CIBERCRIMEN</h2>
+        </div>
+        <div class="features-imgs">
+            <img class="img-logoFelcc" src="./img/logo_policia-0000-2w_1Z0o5f-transformed (1).png" alt="Logo felcc">
+            <img class="img-logoPolicia" src="./img/ESCUDO-DE-LA-POLICIA-BOLIVIANAKL2-992x1024 (1).png" alt="Logo Policia">
+        </div>
+        <div>
+            <span id="element"></span>  
+        </div>
+        
+
+        <!-- Script Libreria para animacion -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      
+        <!-- Configuracion e inicio de animacion -->
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['INVESTIGACIÓN DE DELITOS', 'INFORMACIÓN', 'POLICIA BOLIVIANA'],
+            typeSpeed: 100,
+          });
+        </script>
+    </section>
+</body>
+</html>
