@@ -65,13 +65,21 @@ body{
 	z-index: 3;
     
 }
+.header-menu-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 7rem;
+	height: 100%;
+	text-align: center;
+}
 .header-logo-img{
 	width: 3rem;
 	height: 3rem;
 }
 li{
     background-color: green;
-    padding: 1rem 0.5rem;
+    width: 7rem;
     border-radius: 0.5rem;
     cursor: pointer;
 }
@@ -196,5 +204,108 @@ button{
 		height: 7rem;
 		z-index: 3;
 	}
+	.item1{
+		width: 100% !important;
+	}
+	.item2{
+		width: 100% !important;
+	}
+}
 
+  .boletin{
+	margin: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
   }
+  .boletin-txt{
+	max-width: 40%;
+  }
+  .boletin-img{
+	width: 10%;
+  }
+  .cartas{
+	margin: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+  }
+  .cartas-title{
+	width: 100%;
+  }
+  .cartas-container{
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  .carta{
+	display: flex;
+	flex-direction: column;
+	width: 15rem;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 128, 0, 0.377);
+  }
+  .carta-txt{
+	padding: 1rem;
+	margin: 2rem 1rem;	
+  }
+  .carta-title{
+	padding: 1rem;
+  }
+   /* NOSOTROS */
+.container1{
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	padding: 1rem;
+	background-color: rgba(85, 107, 47, 0.5);
+	color: lightgreen;
+	gap: 2rem;
+	border-radius: 1rem;
+	flex-wrap: wrap;
+}
+.container2{	
+	display: grid; 
+	padding: 15px;
+	background-color: rgba(85, 107, 47, 0.5);
+	color: lightgreen;
+	gap: 5%;
+	/*grid-template-columns: 1fr 1fr 2fr 1fr 1fr;*/
+	grid-template-columns: minmax(100px, 2fr) 2fr 1fr;
+	grid-template-rows: 10rem;
+	height: 250px;
+	text-align: justify;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);	
+}
+
+.item1{
+	background-color: darkred;
+	padding: 2rem;
+	width: 20%;
+}
+.item2{
+	background-color: black;
+	border-radius: 10px;
+	width: 40%;
+	padding: 1rem;
+
+	text-align: justify;
+	justify-content: center;
+}
+
+.item3 {
+	background-color: darkred;
+	border-radius: 10px;
+	width: 15rem;
+}
+.item3-img{
+	padding: 0.5rem;
+	width: 14rem;
+}
+
